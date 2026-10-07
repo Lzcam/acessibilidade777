@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página acessível sobre sistemas inteligentes, suas características, componentes e aplicações.">
+    <title>Sistemas Inteligentes - Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="header-content">
+            <img class="coelho" src="images-removebg-preview.png" alt="Ilustração de um coelho">
+
+            <div class="header-text">
+                <p class="eyebrow">Trabalho prático acadêmico</p>
+                <h1>Explorando os Sistemas Inteligentes</h1>
+                <p class="subtitle">Conheça conceitos, componentes e aplicações da tecnologia inteligente.</p>
+            </div>
+        </div>
+
+        <nav class="toolbar" aria-label="Ferramentas de acessibilidade e idioma">
+            <button id="toggleReadMode" class="button" type="button"
+                    aria-label="Ler o conteúdo da página em voz alta"
+                    aria-pressed="false">
+                🔊 Ler Conteúdo
+            </button>
+
+            <button id="decreaseText" class="button secondary" type="button"
+                    aria-label="Diminuir tamanho do texto">
+                A−
+            </button>
+
+            <button id="increaseText" class="button secondary" type="button"
+                    aria-label="Aumentar tamanho do texto">
+                A+
+            </button>
+
+            <button id="toggleContrast" class="button secondary" type="button"
+                    aria-label="Ativar ou desativar alto contraste"
+                    aria-pressed="false">
+                ◐ Alto contraste
+            </button>
+
+            <div id="google_translate_element" aria-label="Tradutor da página"></div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" class="main-content">
+        <article id="content-to-read" aria-labelledby="titulo-conteudo">
+            <div class="intro-card">
+                <span class="tag">HTML5 • CSS3 • JavaScript</span>
+                <h2 id="titulo-conteudo">O Que São Sistemas Inteligentes?</h2>
+
+                <p>
+                    Sistemas inteligentes referem-se a sistemas de computador que podem imitar processos
+                    de inteligência humana. Eles são projetados para aprender, raciocinar, resolver problemas,
+                    compreender linguagem e até perceber o ambiente de maneira semelhante aos seres humanos.
+                    Esses sistemas utilizam uma variedade de tecnologias, incluindo inteligência artificial (IA),
+                    aprendizado de máquina (Machine Learning - ML), processamento de linguagem natural
+                    (Natural Language Processing - NLP) e robótica.
+                </p>
+
+                <p>
+                    O objetivo principal dos sistemas inteligentes é automatizar tarefas complexas e tomar
+                    decisões baseadas em dados, melhorando a eficiência e a precisão em diversas aplicações.
+                    Eles são capazes de adaptar seu comportamento ao longo do tempo, aprendendo com novas
+                    experiências e dados, o que os torna extremamente versáteis e poderosos.
+                </p>
+            </div>
+
+            <section aria-labelledby="componentes">
+                <h2 id="componentes">Componentes Chave</h2>
+                <p>
+                    Os sistemas inteligentes são construídos sobre uma fundação de algoritmos e dados.
+                    Seus componentes chave incluem:
+                </p>
+
+                <ul class="feature-list">
+                    <li>
+                        <strong>Sensores e Atuadores:</strong>
+                        Para interagir com o ambiente (em robótica) ou coletar dados.
+                    </li>
+                    <li>
+                        <strong>Base de Conhecimento:</strong>
+                        Onde informações sobre o domínio são armazenadas e organizadas.
+                    </li>
+                    <li>
+                        <strong>Mecanismo de Inferência:</strong>
+                        Responsável por processar o conhecimento e tomar decisões.
+                    </li>
+                    <li>
+                        <strong>Interface do Usuário:</strong>
+                        Para permitir a interação humana.
+                    </li>
+                    <li>
+                        <strong>Módulos de Aprendizado:</strong>
+                        Que permitem ao sistema melhorar seu desempenho através da experiência.
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="aplicacoes">
+                <h2 id="aplicacoes">Aplicações Atuais e Futuras</h2>
+                <p>
+                    Aplicações de sistemas inteligentes são vastas e crescem exponencialmente.
+                    Encontramos esses sistemas em:
+                </p>
+
+                <ul class="application-grid">
+                    <li><strong>Saúde:</strong> Diagnóstico de doenças, descoberta de medicamentos.</li>
+                    <li><strong>Finanças:</strong> Detecção de fraudes, negociação de alta frequência.</li>
+                    <li><strong>Manufatura:</strong> Robôs industriais, otimização da cadeia de suprimentos.</li>
+                    <li><strong>Veículos Autônomos:</strong> Carros sem motorista, drones de entrega.</li>
+                    <li><strong>Assistentes Virtuais:</strong> Siri, Alexa, Google Assistant.</li>
+                    <li><strong>Educação:</strong> Plataformas de aprendizado adaptativo, tutores inteligentes.</li>
+                </ul>
+
+                <p>
+                    O futuro dos sistemas inteligentes promete uma integração ainda maior em nosso cotidiano,
+                    transformando indústrias e a forma como interagimos com a tecnologia e o mundo ao nosso redor,
+                    impulsionando a inovação e resolvendo desafios globais complexos.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>2026 | Sistemas Inteligentes | Trabalho prático acadêmico.</p>
+        <p class="footer-note">Interface desenvolvida com foco em usabilidade e acessibilidade.</p>
+    </footer>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt-BR',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>
